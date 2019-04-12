@@ -13,6 +13,7 @@ public class Atividade4 {
 	 */
 	 
 	
+	@SuppressWarnings("resource")
 	public static void main(String[] args) {
 		
 		Scanner entrada = new Scanner(System.in);

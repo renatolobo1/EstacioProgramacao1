@@ -4,7 +4,7 @@ package Folha1;
  * @author renato.lobo [renatolobo_@hotmail.com]
  * @version 1.0
  */
-import java.util.Scanner;
+
 
 public class Atividade2 {
 	
@@ -13,9 +13,10 @@ public class Atividade2 {
 	 */
 	 
 	
+
 	public static void main(String[] args) {
 		
-		Scanner entrada = new Scanner(System.in);
+		;
 		
 		String nome = "Renato";
 		String disciplina = "Programacao";
