@@ -16,6 +16,7 @@ public class Atividade6 {
 	
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner entrada = new Scanner(System.in);
 		
 		double pc, percentual; 

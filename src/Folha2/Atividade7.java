@@ -19,6 +19,7 @@ public class Atividade7 {
 	
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner entrada = new Scanner(System.in);
 		
 		double custoFabrica , distribuidor = 0 , imposto = 0;

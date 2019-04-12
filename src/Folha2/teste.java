@@ -12,6 +12,7 @@ public class teste {
 	
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner entrada = new Scanner(System.in);
 		
 		int produto, parcela;

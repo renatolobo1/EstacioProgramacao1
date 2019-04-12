@@ -15,33 +15,37 @@ public class Atividade9 {
 
 	public static void main(String[] args) {
 		
+		@SuppressWarnings("resource")
 		Scanner entrada = new Scanner(System.in);
 		
+		@SuppressWarnings("unused")
 		String nome, sexo;
 		float salario;
 		int idade;
 		
 		
 		
-		System.out.println("Qual a sua tereceira nota: ");
-		sexo = entrada.nextLine();
+		System.out.println("Informe ser Sexo: ");
+		sexo =entrada.nextLine();
 		System.out.println("Qual o seu Nome: ");
 		nome = entrada.nextLine();
-		System.out.println("Qual a sua primeira nota: ");
+		System.out.println("Informe sua Idade: ");
 		idade = entrada.nextInt();
-		System.out.println("Qual a sua segunda nota: ");
+		System.out.println("Informe Seu salario Fixo: ");
 		salario = entrada.nextFloat();
 		
-		float media = ((nota1+nota2+nota3)/3);
 		
-		if (sexo = m  ){
 		
-		System.out.println (nome + " Você foi Aprovado com a media: "+media);
-	}   else if(media <=5){
-		System.out.println (nome + " Você foi Reprovado com a media: "+media);
-	} else {
-		System.out.println (nome + " Você Ficou de Recuteração com a media: "+media);
+		if (sexo.equalsIgnoreCase("m") && idade >= 30){
+			System.out.println ("Seu Salario Liquido e de: R$ " + (salario - 100));
+	}   else if (sexo.equalsIgnoreCase("m") && idade < 30){ 
+			System.out.println ("Seu Salario Liquido e de: R$ " + (salario - 50));
+	}	else if (sexo.equalsIgnoreCase("f") && idade >= 30){
+			System.out.println ("Seu Salario Liquido e de: R$ " + (salario - 200));
+	}	else if (sexo.equalsIgnoreCase("f") && idade < 30){ 
+			System.out.println ("Seu Salario Liquido e de: R$ " + (salario - 80));
+	} 	else {
+		System.out.println ("Sexo informado errado, digitar apenas m ou f minsuculos");
 	}
-
 }
 }
