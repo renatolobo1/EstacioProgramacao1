@@ -3,35 +3,58 @@ package Atividade4;
 import java.util.Scanner;
 
 public class Main {
+	
+	public static void compara (Livro x, Livro y){
+		
+		if (x.getPreco() > y.getPreco()){
+			
+			System.out.println(x.getEditora());
+		} else {
+			System.out.println(y.getEditora());
+		}
+		
+		
+		
+	}
+	
 
 	public static void main(String[] args) {
 		Scanner entrada = new Scanner(System.in);
 		
+		
 		Livro livro1 = new Livro();
 		
 		System.out.println("Informe o nome do livro1");
-		livro1.nome=entrada.nextLine();		
+		livro1.setNome(entrada.nextLine());		
 		System.out.println("Informe o Autor do livro1");
-		livro1.autor=entrada.nextLine();		
+		livro1.setAutor(entrada.nextLine());		
 		System.out.println("Informe a Editora do livro1");
-		livro1.editora=entrada.nextLine();
+		livro1.setEditora(entrada.nextLine());
 		System.out.println("Informe o preço do livro1");
-		livro1.preco=Double.parseDouble(entrada.nextLine());
-		System.out.println("Informe o ID do livro1"+"\n");
-		livro1.codigo=entrada.nextLine();
+		livro1.setPreco(Double.parseDouble(entrada.nextLine()));
+		System.out.println("Informe o ID do livro1");
+		livro1.setCodigo(entrada.nextLine());
 		
 		Livro livro2 = new Livro();
 		System.out.println("Informe o nome do livro2");
-		livro2.nome=entrada.nextLine();		
+		livro2.setNome(entrada.nextLine());		
 		System.out.println("Informe o Autor do livro2");
-		livro2.autor=entrada.nextLine();		
+		livro2.setAutor(entrada.nextLine());		
 		System.out.println("Informe a Editora do livro2");
-		livro2.editora=entrada.nextLine();
+		livro2.setEditora(entrada.nextLine());
 		System.out.println("Informe o preço do livro2");
-		livro2.preco=Double.parseDouble(entrada.nextLine());
+		livro2.setPreco(Double.parseDouble(entrada.nextLine()));
 		System.out.println("Informe o ID do livro2");
-		livro2.codigo=entrada.nextLine();		
+		livro2.setCodigo(entrada.nextLine());		
 		
-
+		
+		//System.out.println("Informe o nome do livro2");
+		//livro2.setNome(entrada.nextLine());
+		
+		//System.out.println(livro2.getNome());
+		
+		compara(livro1 , livro2);
+		
+		
 	}
 }

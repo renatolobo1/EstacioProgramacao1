@@ -2,11 +2,11 @@ package Atividade4;
 
 public class Livro {
 
-	 String nome;
-	 String autor;
-	 String editora;
-	 double preco;
-	 String codigo;
+	private String nome;
+	private String autor;
+	private String editora;
+	private double preco;
+	private String codigo;
 
 	public Livro() {
 		
@@ -19,7 +19,7 @@ public class Livro {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-
+	
 	public String getAutor() {
 		return autor;
 	}
@@ -52,5 +52,7 @@ public class Livro {
 		this.codigo = codigo;
 	}
 
-	
+	 
 }
+
+
