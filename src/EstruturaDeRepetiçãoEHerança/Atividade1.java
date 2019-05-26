@@ -15,6 +15,17 @@ public class Atividade1 {
 	
 	
 	
+	/* SOBRESCRITA reside quando voce, ao fazer a herança de classes, onde as classes filhas (sub classes) 
+	 * herdam todos os métodos da classe pai (super classe), ao declarar o mesmo método com a mesma
+	 *  assinatura da classe pai na classe filha, voce está fazendo a sobrescrita desse método na classe filha, 
+	 *  ou seja, voce está sobrescrevendo e substituindo pelo mesmo método só que possa estar com uma implementação diferente.
+	 *  SOBRECARGA A sobrecarga de métodos consiste em criarmos o mesmo método com possibilidades de entradas diferentes.
+	 *   Essas entradas, caracterizadas como parâmetros, devem sempre ser de tipos diferentes, quantidades de parâmetros 
+	 *   diferentes ou posições dos tipos diferentes.
+	 */
+	
+	
+	
 	
 	
 	public static void main(String[] args){
